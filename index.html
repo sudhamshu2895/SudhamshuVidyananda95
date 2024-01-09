@@ -3,92 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>John Doe's Data Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f3f3f3;
-            color: #333;
+            text-align: center;
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
         }
-        header {
-            background-color: #333;
+        .hero {
+            padding: 50px;
             color: white;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 24px;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+        .menu {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
         }
-        .section {
-            padding: 20px 0;
-        }
-        .about, .projects, .contact {
-            background: white;
-            margin: 20px 0;
-            padding: 20px;
-            border: 1px solid #ddd;
-        }
-        .social-links {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .social-links a {
+        .menu a {
+            text-decoration: none;
+            color: #333;
             margin: 0 10px;
+            font-size: 20px;
+        }
+        .menu i {
+            margin-right: 8px;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 20px;
+            background: url('sudd.png') no-repeat center center;
+            background-size: cover;
             display: inline-block;
         }
-        .social-links img {
-            width: 30px;
-            height: 30px;
-        }
-        footer {
+        .footer {
             background-color: #333;
             color: white;
-            text-align: center;
-            padding: 10px 0;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        My Portfolio
-    </header>
-
-    <div class="container">
-        <!-- About Me Section -->
-        <div class="section about">
-            <h2>About Me</h2>
-            <p>Short description about yourself, your background, and your expertise.</p>
+    <div class="hero">
+        <h1>Sudhamshu Vidyananda Portfolio</h1>
+        <div class="menu">
+            <a href="#projects"><i class="fas fa-project-diagram"></i>Projects</a>
+            <a href="#blog"><i class="fas fa-blog"></i>Blog</a>
+            <a href="#dashboards"><i class="fas fa-chart-bar"></i>Dashboards</a>
+            <a href="#visualizations"><i class="fas fa-chart-area"></i>Visualizations</a>
+            <a href="#cv"><i class="fas fa-file-alt"></i>CV</a>
         </div>
-
-        <!-- Projects Section -->
-        <div class="section projects">
-            <h2>Projects</h2>
-            <p>Overview of your projects. Describe what you did, the tools you used, and the outcomes.</p>
-            <!-- Add project details here -->
-        </div>
-
-        <!-- Contact Section -->
-        <div class="section contact">
-            <h2>Contact Me</h2>
-            <p>How to reach me: [Your Email]</p>
-        </div>
-
-        <!-- Social Links -->
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/sudhamshuvidyananda" target="_blank">
-                <img src="linkedin.png" alt="LinkedIn">
-            </a>
-            <!-- Add other social media icons if needed -->
-        </div>
+        <div class="profile-picture"></div>
     </div>
-
-    <footer>
-        © 2024 My Portfolio
-    </footer>
+    <div class="footer">
+        <a href="#request"><i class="fas fa-question-circle"></i> Request access to Q&A</a>
+    </div>
 </body>
 </html>
