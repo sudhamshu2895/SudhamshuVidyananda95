@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,38 +11,45 @@
             padding: 0;
             background-color: #f3f3f3;
             color: #333;
-            text-align: center;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
-            padding: 15px 0;
+            padding: 20px 0;
             text-align: center;
-            font-size: 2em;
+            font-size: 24px;
         }
         .container {
             width: 80%;
-            margin: 20px auto;
+            margin: auto;
+            overflow: hidden;
         }
-        .portfolio-item {
+        .section {
+            padding: 20px 0;
+        }
+        .about, .projects, .contact {
             background: white;
+            margin: 20px 0;
             padding: 20px;
-            margin-bottom: 20px;
-            text-align: left;
             border: 1px solid #ddd;
         }
-        .portfolio-item h2 {
-            color: #4CAF50;
+        .social-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-links a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
         }
         footer {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
@@ -53,23 +59,36 @@
     </header>
 
     <div class="container">
-        <!-- Portfolio item 1 -->
-        <div class="portfolio-item">
-            <h2>Project Title 1</h2>
-            <p>Description of Project 1. Talk about what you did, the tools you used, and the outcomes.</p>
+        <!-- About Me Section -->
+        <div class="section about">
+            <h2>About Me</h2>
+            <p>Short description about yourself, your background, and your expertise.</p>
         </div>
 
-        <!-- Portfolio item 2 -->
-        <div class="portfolio-item">
-            <h2>Project Title 2</h2>
-            <p>Description of Project 2. This could include any project details, your role, and the technologies used.</p>
+        <!-- Projects Section -->
+        <div class="section projects">
+            <h2>Projects</h2>
+            <p>Overview of your projects. Describe what you did, the tools you used, and the outcomes.</p>
+            <!-- Add project details here -->
         </div>
 
-        <!-- Add more portfolio items here -->
+        <!-- Contact Section -->
+        <div class="section contact">
+            <h2>Contact Me</h2>
+            <p>How to reach me: [Your Email]</p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sudhamshuvidyananda" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <!-- Add other social media icons if needed -->
+        </div>
     </div>
 
     <footer>
-        © 2023 My Portfolio
+        © 2024 My Portfolio
     </footer>
 </body>
 </html>
