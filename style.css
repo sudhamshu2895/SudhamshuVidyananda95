@@ -10,12 +10,11 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('images/Port.jpg');
+    background: url('images/Portfolio.jpg');
     background-size:cover;
     position:relative;
     padding: 0;
     margin: 0;
-    opacity: 0.9;
 }
 /* text css above hero image*/
 .hero_title {
