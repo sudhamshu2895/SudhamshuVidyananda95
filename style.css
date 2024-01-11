@@ -81,7 +81,7 @@
     text-align: center;
 }
 .email-container {
-    text-align: left;
+    text-align: start;
     text-indent: 30%;
     margin-top: 50px;
 }
