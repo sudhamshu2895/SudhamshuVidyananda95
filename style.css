@@ -46,11 +46,7 @@
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,
-.fa-twitter:hover,
-.fa-twitch:hover {
-    color: #fff;
-}
+
 .fab {
     color: #000000;
 }
