@@ -256,15 +256,25 @@
                  <a href="https://www.linkedin.com/in/sudhamshuvidyananda" target="_blank"><i class="fab fa-linkedin"></i></a>
               </div>
                 <!-- form fields -->
-                <form action="mailto:your@email.com" method="get" enctype="text/plain">
-                    <input type="text" class="form-control form-control-lg" placeholder="Name">
-                    <input type="email" class="form-control mt-3" placeholder="Email">
-                    <input type="text" class="form-control mt-3" placeholder="Subject">
-                    <div class="mb-3 mt-3">
-                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                    </div>
-                  <input type="submit" value="Contact Me" class="btn btn-success mt-3">
-                </form>
+                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                   <div class="row">
+                   <label class="required" for="name">Your name:</label><br />
+                   <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                   <span id="name_validation" class="error_message"></span>
+                  </div>
+                 <div class="row">
+                 <label class="required" for="email">Your email:</label><br />
+                 <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                 <span id="email_validation" class="error_message"></span>
+                 </div>
+                 <div class="row">
+                 <label class="required" for="message">Your message:</label><br />
+                 <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                 <span id="message_validation" class="error_message"></span>
+                 </div>
+    
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
                 <button type="button" class="btn btn-success mt-3">Contact Me</button>
             </div>
         </div>
