@@ -256,25 +256,14 @@
                  <a href="https://www.linkedin.com/in/sudhamshuvidyananda" target="_blank"><i class="fab fa-linkedin"></i></a>
               </div>
                 <!-- form fields -->
-                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                   <div class="row">
-                   <label class="required" for="name">Your name:</label><br />
-                   <input id="name" class="form-control mt-3" " name="name" type="text" value="" size="30" /><br />
-                   <span id="name_validation" class="error_message"></span>
-                  </div>
-                 <div class="row">
-                 <label class="required" for="email">Your email:</label><br />
-                 <input id="email" class="form-control mt-3"  name="email" type="text" value="" size="30" /><br />
-                 <span id="email_validation" class="error_message"></span>
-                 </div>
-                 <div class="row">
-                 <label class="required" for="message">Your message:</label><br />
-                 <textarea id="message" class="form-control mt-3"  name="message" rows="7" cols="30"></textarea><br />
-                 <span id="message_validation" class="error_message"></span>
-                 </div>
-    
-    <input id="submit_button" type="submit" value="Send email" class="btn btn-success mt-3"/>
-</form>
+                <form action="form.php" method="post">
+                   Name: <input type="text" name="name" class="form-control mt-3" ><br>
+                   Email: <input type="text" name="email" class="form-control mt-3" ><br>
+                   Subject: <input type="text" name="subject" class="form-control mt-3" ><br>
+                   Message:<br>
+                   <textarea name="message" rows="5"></textarea><br>
+                  <input type="submit" value="Contact Me" class="btn btn-success mt-3">
+                 </form>
                 <button type="button" class="btn btn-success mt-3">Contact Me</button>
             </div>
         </div>
