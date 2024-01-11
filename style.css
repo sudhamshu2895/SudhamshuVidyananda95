@@ -47,7 +47,6 @@
     cursor: pointer;
 }
 .fa-facebook:hover,
-.fa-instagram:hover,
 .fa-twitter:hover,
 .fa-twitch:hover {
     color: #fff;
@@ -81,8 +80,7 @@
 }
 .email-container {
     text-align: start;
-    text-indent: 30%;
-    margin-top: 50px;
+  
 }
 
 .email-container a {
